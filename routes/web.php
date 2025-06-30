@@ -7,4 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('/testing', [testing::class, 'test'] );
+Route::get('/jajal', [testing::class, 'test'] );
+Route::get('/jajal/{id}', [testing::class, 'testById'] );
+Route::get('/jajal/{id}/edit', [testing::class, 'testByIdEdit'] );
